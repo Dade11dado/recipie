@@ -1,0 +1,30 @@
+.container{
+    margin-top: 50px;
+    max-width: 80vw;
+    border: 2px solid rgb(237,231,225);
+    border-radius: 20px;
+}
+
+.first-line{
+    display: flex;
+    justify-content: space-between;
+}
+
+#scoreRec{
+    margin-bottom: 0.5rem;
+}
+
+#scoreRec:before{
+    position: absolute;
+    top:18%;
+    border:1px solid black;
+    content: "This is a score based on the vote that the recipies was given";
+    opacity: 0;
+    transition: opacity 1sec;
+ 
+}
+
+#scoreRec:hover:before{
+    opacity: 1;
+
+}
