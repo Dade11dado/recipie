@@ -3,7 +3,11 @@
     max-width: 80vw;
     border: 2px solid rgb(237,231,225);
     border-radius: 20px;
-}   
+} 
+
+body{
+    font-family: "Montserrat", sans-serif;
+}
 
 hr{
     margin:0 !important;
@@ -19,10 +23,29 @@ hr{
 
 #food-pic{
     float: left;
-    max-width: 12%;
-    max-height: 30%;
+    max-width: 30%;
+    max-height: 20%;
     margin-right:10px;
     border-radius: 20px;
+}
+
+@media (max-width:600px){
+    #food-pic{
+        max-width: 100%;
+        max-height: 100%;
+        margin-right:10px;
+        border-radius: 20px;
+    } 
+
+    li{
+        font-size: 1rem;
+        list-style-type: none;
+        padding: 0;
+    }
+
+    ol, ul{
+        padding:0;
+    }
 }
 
 #scoreRec{
@@ -50,4 +73,18 @@ hr{
 
 #img-section{
     margin-top:50px;
+}
+
+#procediments{
+    padding:10px;
+    margin:10px
+}
+ol li{
+    font-size: 1rem;
+    padding: 10px;
+}
+
+ul li{
+    font-size: 1rem;
+    padding: 10px;
 }

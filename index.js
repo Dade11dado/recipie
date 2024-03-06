@@ -7,8 +7,12 @@ const app = express()
 app.use(express.static("public"))
 
 //getting home route
-app.get("/",(req,res)=>{
-    res.render("index.ejs")
+app.get("/",async(req,res)=>{
+    const response = await axios.get(`https://api.spoonacular.com/recipes/random?apiKey=${key}&number=1`)
+    console.log(response.status)
+    res.render("index.ejs",{
+        recipies:response.data
+    })
 })
 
 
