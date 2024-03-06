@@ -3,15 +3,30 @@
     max-width: 80vw;
     border: 2px solid rgb(237,231,225);
     border-radius: 20px;
+}   
+
+hr{
+    margin:0 !important;
 }
 
 .first-line{
+    padding:5px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    
+}
+
+#food-pic{
+    float: left;
+    max-width: 12%;
+    max-height: 30%;
+    margin-right:10px;
+    border-radius: 20px;
 }
 
 #scoreRec{
-    margin-bottom: 0.5rem;
+    font-size:1rem;
 }
 
 #scoreRec:before{
@@ -20,11 +35,19 @@
     border:1px solid black;
     content: "This is a score based on the vote that the recipies was given";
     opacity: 0;
-    transition: opacity 1sec;
+    transition: opacity 10sec forwards;
  
 }
 
 #scoreRec:hover:before{
     opacity: 1;
 
+}
+
+#nameRec{
+    margin-left: 2%;
+}
+
+#img-section{
+    margin-top:50px;
 }
